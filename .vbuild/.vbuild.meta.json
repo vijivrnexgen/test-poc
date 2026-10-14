@@ -1,0 +1,65 @@
+{
+    "copybook_files": [
+        "C:/Users/user/Documents/projects/vbuild/cobol/copylib/ACCTCPY.cpy"
+    ],
+    "program_files": {
+        "C:/Users/user/Documents/projects/vbuild/cobol/cicslib/CUSTMAP.asm": {
+            "source_code_type": "bms"
+        },
+        "C:/Users/user/Documents/projects/vbuild/cobol/cicslib/CUSTPGM.cbl": {
+            "source_code_type": "cics"
+        },
+        "C:/Users/user/Documents/projects/vbuild/cobol/copylib/ACCTCPY.cpy": {
+            "source_code_type": "cpy"
+        },
+        "C:/Users/user/Documents/projects/vbuild/cobol/srclib/SHIVA.cbl": {
+            "source_code_type": "cobol",
+            "static_calls": [],
+            "has_dynamic_calls": false
+        },
+        "C:/Users/user/Documents/projects/vbuild/cobol/srclib/CALCINT.cbl": {
+            "source_code_type": "cobol",
+            "static_calls": [],
+            "has_dynamic_calls": false
+        },
+        "C:/Users/user/Documents/projects/vbuild/cobol/srclib/INTPOST.cbl": {
+            "source_code_type": "cobol",
+            "static_calls": [
+                {
+                    "name": "CALCINT",
+                    "path": "C:/Users/user/Documents/projects/vbuild/cobol/srclib/CALCINT.cbl"
+                }
+            ],
+            "has_dynamic_calls": false
+        },
+        "C:/Users/user/Documents/projects/vbuild/cobol/srclib/ACCTRPT.cbl": {
+            "source_code_type": "cobol",
+            "static_calls": [
+                {
+                    "name": "CALCINT",
+                    "path": "C:/Users/user/Documents/projects/vbuild/cobol/srclib/CALCINT.cbl"
+                }
+            ],
+            "has_dynamic_calls": false
+        },
+        "C:/Users/user/Documents/projects/vbuild/cobol/srclib/RUNALL.cbl": {
+            "source_code_type": "cobol",
+            "static_calls": [
+                {
+                    "name": "INTPOST",
+                    "path": "C:/Users/user/Documents/projects/vbuild/cobol/srclib/INTPOST.cbl"
+                },
+                {
+                    "name": "ACCTRPT",
+                    "path": "C:/Users/user/Documents/projects/vbuild/cobol/srclib/ACCTRPT.cbl"
+                }
+            ],
+            "has_dynamic_calls": false
+        },
+        "C:/Users/user/Documents/projects/vbuild/cobol/srclib/DRUNALL.cbl": {
+            "source_code_type": "cobol",
+            "static_calls": [],
+            "has_dynamic_calls": true
+        }
+    }
+}

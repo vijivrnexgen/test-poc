@@ -1,0 +1,16 @@
+[zosmf]
+host="115.99.14.7"
+port=10443
+verify=false
+user_id="VREX006"
+
+[remote_datasets]
+source_library_pds="VREX006.POC.SRCLIB1"
+copy_library_pds="VREX006.POC.COPYLIB"
+symbolic_map_pds="VREX006.POC.SYMMAP"
+load_library_pds="VREX006.POC.LOADLIB"
+
+[local_files]
+source_library_path="./cobol/srclib"
+copy_library_path="./cobol/copylib"
+symbolic_map_path="./symmap"
